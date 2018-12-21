@@ -2,7 +2,7 @@
 	"name": "checkFeedsInOpml",
 	"description": "Read all the feeds in the OPML file, report on success.",
 	"author": "Dave Winer <dave@smallpicture.com>",
-	"version": "0.40.0",
+	"version": "0.4.1",
 	"dependencies" : {
 		"request": "*",
 		"opmlparser": "*"

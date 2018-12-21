@@ -32,7 +32,12 @@ function readOpmlFile (url, callback) {
 	}
 
 readOpmlFile (urlOpmlFile, function (jstruct) {
-	request (jstruct.xmlurl, function (error, response, body) {
-		console.log (jstruct.text + ": " + response.statusCode);
+	request (jstruct.xmlurl, function (err, response, body) {
+		if (err) {
+			console.log (jstruct.text + ": err.message == " + err.message);
+			}
+		else {
+			console.log (jstruct.text + ": " + response.statusCode);
+			}
 		});
 	});
